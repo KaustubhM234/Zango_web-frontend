@@ -4,10 +4,13 @@ import AboutBackgroundImage from "../Assets/about-background-image.png";
 import { BsFillPlayCircleFill } from "react-icons/bs";
 
 const About = () => {
+  const imageStyle = {
+    filter: 'hue-rotate(180deg)', // Adjust the degree value for the desired blue color
+  };
   return (
     <div className="about-section-container">
       <div className="about-background-image-container">
-        <img src={AboutBackground} alt="" />
+        <img src={AboutBackground} alt="" style={imageStyle}/>
       </div>
       <div className="about-section-image-container">
         <img src={AboutBackgroundImage} alt="" />

@@ -21,6 +21,9 @@ const Work = () => {
       text: "Lorem ipsum dolor sit amet consectetur. Maecenas orci et lorem ipsum",
     },
   ];
+  const imageStyle = {
+    filter: 'hue-rotate(180deg)', // Adjust the degree value for the desired blue color
+  };
   return (
     <div className="work-section-wrapper">
       <div className="work-section-top">
@@ -35,7 +38,7 @@ const Work = () => {
         {workInfoData.map((data) => (
           <div className="work-section-info" key={data.title}>
             <div className="info-boxes-img-container">
-              <img src={data.image} alt="" />
+              <img src={data.image} alt="" style={imageStyle} />
             </div>
             <h2>{data.title}</h2>
             <p>{data.text}</p>
