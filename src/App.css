@@ -453,6 +453,8 @@ nav {
 transition: all;
 }
 
+
+
 @keyframes slideIn {
   0% {
     transform: translateX(100%);
@@ -461,7 +463,10 @@ transition: all;
     transform: translateX(0);
   }
 }
+.dsa{
+  animation: rSlideIn 0.7s ease-in-out 0.7s backwards; /* Add forwards for fill mode */
 
+}
 .home-text-section {
   animation: rSlideIn 0.7s ease-in-out 0.7s backwards; /* Add forwards for fill mode */
 }

@@ -10,7 +10,8 @@ import AppBanner from "./Components/AppBanner";
 import FAQ from "./Components/Faq";
 
 function App() {
-  
+
+ 
 
   return (
     <div className="App">
