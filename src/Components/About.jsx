@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import AboutBackground from "../Assets/about-background.png";
 import AboutBackgroundImage from "../Assets/about-background-image.png";
 import { BsFillPlayCircleFill } from "react-icons/bs";
 
 const About = () => {
+const [scroll, setscroll] = useState(null)
+
   const imageStyle = {
     filter: 'hue-rotate(180deg)', // Adjust the degree value for the desired blue color
   };

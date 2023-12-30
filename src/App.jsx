@@ -5,14 +5,22 @@ import Work from "./Components/Work";
 import Testimonial from "./Components/Testimonial";
 import Contact from "./Components/Contact";
 import Footer from "./Components/Footer";
+import { useEffect, useState } from "react";
+import AppBanner from "./Components/AppBanner";
+import FAQ from "./Components/Faq";
 
 function App() {
+  
+
   return (
     <div className="App">
       <Home />
-      <About />
+        <About />
+      
       <Work />
-      <Testimonial />
+      {/* <Testimonial /> */}
+      <AppBanner/>
+      <FAQ/>
       <Contact />
       <Footer />
     </div>
