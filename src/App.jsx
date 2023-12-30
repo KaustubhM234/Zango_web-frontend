@@ -21,8 +21,8 @@ function App() {
       <Work />
       {/* <Testimonial /> */}
       <AppBanner/>
-      <FAQ/>
       <Contact />
+      <FAQ/>
       <Footer />
     </div>
   );

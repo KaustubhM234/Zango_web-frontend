@@ -144,6 +144,7 @@ nav {
   justify-content: center;
   display: flex;
   flex-direction: column;
+  
 }
 .primary-subheading {
   font-weight: 12rem;
@@ -464,8 +465,12 @@ transition: all;
   }
 }
 .dsa{
-  animation: rSlideIn 0.7s ease-in-out 0.7s backwards; /* Add forwards for fill mode */
+  animation:verticalAnimation 2s ease-in-out infinite 1s, rSlideIn 0.7s ease-in-out 0.5s backwards; /* Add forwards for fill mode */
 
+}
+.tt{
+  animation: slideIn 0.7s ease-out backwards ; /* Adjust the animation duration and easing as needed */
+transition: all;
 }
 .home-text-section {
   animation: rSlideIn 0.7s ease-in-out 0.7s backwards; /* Add forwards for fill mode */
@@ -487,7 +492,7 @@ transition: all;
 }
 
 /*------------------------------------------------- App banner ---------------------------------------- */
-
+/* 
 .bannerMain
 {
   width: 100%;
@@ -524,9 +529,10 @@ transition: all;
 {
   width: 45%;
   height: 100%;
-  /* display: flex;
-  align-items: center; */
+   
+  align-items: center; 
 }
+
 
 .brandLogo
 {
@@ -536,15 +542,15 @@ transition: all;
   border-radius: 0 1vw 1vw 0;
   background: url('./Assets/logoblack.jpg') center no-repeat;
   background-size: cover;
-}
-
-/* .homePage
+} */
+/* 
+.homePage
 {
   width: 50%;
   height: 100%;
   overflow: hidden;
   border-radius: 1vw 0 0 1vw;
-} */
+}
 
 .appInfoText
 {
@@ -575,7 +581,7 @@ transition: all;
   padding: 0.8vw 1vw;
   border-radius: 1vw;
   font-family: 'Nova Round';
-}
+} */
 
 
 
@@ -608,4 +614,108 @@ transition: all;
   stroke-width: 2;
   stroke-linecap: round;
   stroke-linejoin: round;
+}/* Updated CSS */
+
+.contact-us-section {
+  height: auto; /* Let the height adjust dynamically based on content */
+  background-color: #3498db; /* A shade of blue, you can adjust as needed */
+  padding: 20px;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  padding-right: 2rem;
+  border-radius: 12px; /* Increase border radius for a softer look */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Slightly lighter box shadow */
+  margin: 20px;
+  color: #fff; /* White text for better contrast */
+}
+
+.contact-us-section h2 {
+  font-size: 32px; /* Larger heading for emphasis */
+  margin-bottom: 15px;
+}
+
+.contact-us-section p {
+  font-size: 18px; /* Slightly larger font for better readability */
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-item {
+  margin-bottom: 15px;
+}
+
+.contact-item strong {
+  font-weight: bold;
+  margin-right: 8px;
+}
+
+.contact-item a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.contact-item a:hover {
+  color: #ecf0f1; /* A slightly lighter shade on hover */
+}
+
+.bannerMain {
+  background-color: #2d2d2d; /* Dark gray background color */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px;
+}
+
+.bannerTitle {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.bannerTitle h1 {
+  color: #fff; /* White text color */
+  font-size: 24px;
+}
+
+.appInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.appImages {
+  flex: 1;
+}
+
+.brandLogo {
+  /* Add styling for your logo container */
+}
+
+.appInfoText {
+  flex: 1;
+}
+
+.textssss {
+  color: #fff; /* White text color */
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+
+.availableOptions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.option {
+  text-align: center;
+  color: #fff; /* White text color */
+}
+
+.option img {
+  border-radius: 8px;
+  margin-bottom: 10px;
 }

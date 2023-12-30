@@ -5,18 +5,7 @@ import Navbar from "./Navbar";
 import { FiArrowRight } from "react-icons/fi";
 
 const Home = () => {
-  // const [scroll, setScroll] = useState(null)
-  // useEffect(() => {
-  //   function handleScroll () {
-  //     setScroll(window.scrollY);
-  //   }
-  //   window.addEventListener("scroll",handleScroll)
-  
-  //   return () => {
-  //     window.removeEventListener("scroll",)
-  //   }
-  // }, [])
-  
+
   const imageStyle = {
     filter: 'hue-rotate(180deg)', // Adjust the degree value for the desired blue color
   };
@@ -31,8 +20,7 @@ const Home = () => {
           <h1 className="primary-heading">
          Your quick <br />e-commerce grocery delivery platform.          </h1>
           <p className="primary-text">
-            Healthy switcher chefs do all the prep work, like peeding, chopping
-            & marinating, so you can cook a fresh food.
+            Healthy Fresh  Groceries at cheaper rate at your doorstep in minutes, so you can cook a fresh food.
           </p>
           <button className="secondary-button">
             Order Now <FiArrowRight />{" "}

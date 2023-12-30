@@ -1,16 +1,31 @@
-import React from "react";
+import React from 'react';
 
-const Contact = () => {
+const ContactUs = () => {
   return (
-    <div className="contact-page-wrapper">
-      <h1 className="primary-heading">Have Question In Mind?</h1>
-      <h1 className="primary-heading">Let Us Help You</h1>
-      <div className="contact-form-container">
-        <input type="text" placeholder="yourmail@gmail.com" />
-        <button className="secondary-button">Submit</button>
+    <div className="contact-us-section">
+      <h2>Contact Us</h2>
+      <p>
+        Feel free to reach out to us via email or phone. You can also connect with us on Twitter.
+      </p>
+
+      <div className="contact-info">
+        <div className="contact-item">
+          <strong>Email:</strong>
+          <a href="mailto:your.email@gmail.com">your.email@gmail.com</a>
+        </div>
+        <div className="contact-item">
+          <strong>Phone:</strong>
+          <span>Your Phone Number</span>
+        </div>
+        <div className="contact-item">
+          <strong>Twitter:</strong>
+          <a href="https://twitter.com/YourTwitterHandle" target="_blank" rel="noopener noreferrer">
+            @YourTwitterHandle
+          </a>
+        </div>
       </div>
     </div>
   );
 };
 
-export default Contact;
+export default ContactUs;
