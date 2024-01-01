@@ -268,7 +268,7 @@ nav {
   margin-top: 1.5rem;
 }
 .work-section-wrapper {
-  margin-top: 15rem;
+  margin-top: 10rem;
 }
 .work-section-top p {
   text-align: center;
@@ -301,8 +301,9 @@ nav {
   margin: 1rem 0rem;
 }
 .work-section-bottom {
-  margin-top: 5rem;
+  margin-top: 3rem;
   display: flex;
+  margin-bottom: 3rem;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
