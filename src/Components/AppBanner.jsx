@@ -18,8 +18,8 @@ function AppBanner() {
 
           <div className='availableImages'>
 
-            <img className='downloadImg' src='/androidCommingSoon.png' width={209} />
-            <img className='downloadImg' src='/iosCommingSoon.png' width={200} />
+            <img className='downloadImg' src='/androidCommingSoon.png' />
+            <img className='downloadImg' src='/iosCommingSoon.png' />
 
           </div>
 
