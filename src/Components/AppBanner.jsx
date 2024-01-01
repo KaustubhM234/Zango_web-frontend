@@ -1,7 +1,5 @@
 import React from 'react';
-import iosCommingSoon from '../Assets/iosCommingSoon.jpg';
-import androidCommingSoon from '../Assets/androidCommingSoon.jpg';
-import logoblack from '../Assets/logoblack.jpg';
+
 
 function AppBanner() {
   return (
