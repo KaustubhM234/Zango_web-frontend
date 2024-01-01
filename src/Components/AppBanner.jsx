@@ -5,32 +5,34 @@ import logoblack from '../Assets/logoblack.jpg';
 
 function AppBanner() {
   return (
-    <div className="bannerMain">
-      <div className="bannerTitle">
-        <h1>Something Awesome is Brewing...</h1>
-      </div>
+    <div className='bannerMain'>
 
-      <div className="appInfo">
-        <div className="appImages">
-          <div className="brandLogo">
-            <img src={logoblack} alt="Logo" style={{ width: '40%', borderRadius: '8px' }} />
+      <div className='bannerInner'>
+
+        <div className='bannerUpper'></div>
+
+        <div className='bannerLower'>
+
+          <h2 className='headng'>{"\u2014"} Coders at work {"\u2014"}</h2>
+          <h3 className='CS'>App available soon</h3>
+
+          <div className='availableImages'>
+
+            <img className='downloadImg' src='/androidCommingSoon.png' width={209} />
+            <img className='downloadImg' src='/iosCommingSoon.png' width={200} />
+
           </div>
+
+          <div className='contactUs'>
+
+            
+
+          </div>
+
         </div>
 
-        <div className="appInfoText">
-          <h2 className="textssss">Soon available on...</h2>
-          <div className="availableOptions">
-            <div className="option">
-              <img src={iosCommingSoon} alt="iOS Coming Soon" width={250} />
-              <p>iOS</p>
-            </div>
-            <div className="option">
-              <img src={androidCommingSoon} alt="Android Coming Soon" width={250} />
-              <p>Android</p>
-            </div>
-          </div>
-        </div>
       </div>
+
     </div>
   );
 }

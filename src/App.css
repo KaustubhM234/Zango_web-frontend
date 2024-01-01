@@ -492,98 +492,100 @@ transition: all;
 }
 
 /*------------------------------------------------- App banner ---------------------------------------- */
-/* 
+
 .bannerMain
 {
   width: 100%;
-  height: 30vw;
-  background-color: #2a2a2a;
-  border-radius: 2vw;
+  height: 50vw;
+  padding: 4.5vw 0;
+  margin: 2vw 0;
   display: flex;
   align-items: center;
-  justify-content: space-evenly;
-  flex-direction: column;
-  overflow: hidden;
-  padding: 0.5vw 0;
+  justify-content: center;  
 }
 
-.bannerTitle
+.bannerInner
 {
-  width: 100%;
-  height: 2vw;
-  font-size: 1.35vw;
-  color: #eeee;
-  text-align: center;
-}
-
-.appInfo
-{
-  width: 100%;
-  height: 20vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
-.appImages
-{
-  width: 45%;
-  height: 100%;
-   
-  align-items: center; 
-}
-
-
-.brandLogo
-{
-  width: 90%;
-  height: 100%;
-  overflow: hidden;
-  border-radius: 0 1vw 1vw 0;
-  background: url('./Assets/logoblack.jpg') center no-repeat;
-  background-size: cover;
-} */
-/* 
-.homePage
-{
-  width: 50%;
-  height: 100%;
-  overflow: hidden;
-  border-radius: 1vw 0 0 1vw;
-}
-
-.appInfoText
-{
-  width: 60%;
-  height: 100%;
-  padding: 0 0.5vw;
+  width: 80%;
+  height: 40vw;
+  /* background: linear-gradient(to left, #61B2F9, #187FFA); */
+  /* background-color: #61B2F9; */
+  border-radius: 2.5vw;
+  transition: all 0.2s ease-out;
+  border: 5px solid #2a2a2a;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-
+  overflow: hidden;
 }
 
-.availableOptions
+.bannerInner:hover
+{
+  border-radius: 1.8vw;
+  height: 41vw;
+  /* box-shadow: 0px 0px 10px 1px #61B2F9; */
+}
+
+.bannerInner:hover .bannerLower
+{
+  border-radius: 2vw 2vw 0 0;
+}
+
+.bannerUpper
 {
   width: 100%;
-  height: 50%;
+  height: 45%;
+  background: url('./Assets/coder1.png') center no-repeat;
+  background-size: contain;
+  z-index: 1;
+  position: relative;
+  top: 6.5%;
+}
+
+.bannerLower
+{
+  width: 100%;
+  height: 70%;
+  background-color: #61b2f98c;
+  z-index: 0;
+  border-radius: 1vw 1vw 0 0;
+  transition: all 0.2s ease-out;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin: 1vw 0;
+  flex-direction: column;
+  transition: all 0.2s ease-out;
 }
 
-.textssss
+.headng
 {
-  background-color: #2a2a2a;
-  color: white;
-  padding: 0.8vw 1vw;
-  border-radius: 1vw;
-  font-family: 'Nova Round';
-} */
+  color: #363636;
+  font-weight: 700;
+  font-size: 2vw;
+}
 
+.CS
+{
+  font-size: 1.5vw;
+  color: #363636;
+  font-weight: 600;
+}
 
+.availableImages
+{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.downloadImg
+{
+  margin: 0 2vw;
+}
+
+/* --------------------------------------------------- FAQ's ---------------------------------------- */
 
 .custom-faq-item {
   margin-top: 2rem;
@@ -618,7 +620,7 @@ transition: all;
 
 .contact-us-section {
   height: auto; /* Let the height adjust dynamically based on content */
-  background-color: #3498db; /* A shade of blue, you can adjust as needed */
+  background-color: #61B2F9; /* A shade of blue, you can adjust as needed */
   padding: 20px;
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -661,61 +663,4 @@ transition: all;
 
 .contact-item a:hover {
   color: #ecf0f1; /* A slightly lighter shade on hover */
-}
-
-.bannerMain {
-  background-color: #2d2d2d; /* Dark gray background color */
-  padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin: 20px;
-}
-
-.bannerTitle {
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.bannerTitle h1 {
-  color: #fff; /* White text color */
-  font-size: 24px;
-}
-
-.appInfo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.appImages {
-  flex: 1;
-}
-
-.brandLogo {
-  /* Add styling for your logo container */
-}
-
-.appInfoText {
-  flex: 1;
-}
-
-.textssss {
-  color: #fff; /* White text color */
-  font-size: 20px;
-  margin-bottom: 15px;
-}
-
-.availableOptions {
-  display: flex;
-  justify-content: space-around;
-}
-
-.option {
-  text-align: center;
-  color: #fff; /* White text color */
-}
-
-.option img {
-  border-radius: 8px;
-  margin-bottom: 10px;
 }
