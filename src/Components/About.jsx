@@ -35,7 +35,7 @@ const About = () => {
       <div className={`about-section-text-container  ${scroll >= offset/5 ? 'tt' : ''} `}>
         <p className="primary-subheading">About</p>
         <h1 className="primary-heading">
-        Why partner with us :        </h1>
+        Why partner with us        </h1>
         <p className="primary-text">
         Inventory management tools, Accounting tools, Dead Stock prediction models, a platform to compete against other online quick commerce and super markets
         </p>
