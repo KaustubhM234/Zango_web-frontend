@@ -673,7 +673,7 @@ transition: all;
 
 .fieldValue
 {
-  width: 35vw;
+  width: 100%;
   height: 2.5vw;
   font-size: 1.2vw;
   padding: 0 1.25vw;
