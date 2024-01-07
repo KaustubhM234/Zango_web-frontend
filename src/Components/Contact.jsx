@@ -27,7 +27,45 @@ const ContactUs = () => {
     // </div>
     <div className='contactMain'>
 
-        
+      <div className='contactForm'>
+
+        <h2 className='contHead'> Contact Form </h2>
+
+        <form className='mainForm' action='#' method='POST'>
+
+          <div className='inputs'>
+
+            <h5 className='fieldName'>
+              Name
+            </h5>
+            <input className='fieldValue' name='name' type='text' placeholder='Your Name' required />
+
+          </div>
+
+          <div className='inputs'>
+
+            <h5 className='fieldName'>
+              Email
+            </h5>
+            <input className='fieldValue' name='Email' type='email' placeholder='Your Email' required />
+
+          </div>
+
+          <div className='inputs'>
+
+            <h5 className='fieldName'>
+              Message
+            </h5>
+            <input className='fieldValue message' name='message' type='textarea' placeholder='Message' required wrap="hard"/>
+
+          </div>
+
+          <input type='submit' className='sendBtn' value='Send'/> 
+
+        </form>
+
+      </div>
+      <div className='contactVector'></div>
       
     </div>
   );
