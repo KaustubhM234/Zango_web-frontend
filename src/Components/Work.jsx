@@ -1,7 +1,9 @@
-import React from "react";
+import {React , useEffect} from "react";
 import PickMeals from "../Assets/pick-meals-image.png";
 import ChooseMeals from "../Assets/choose-image.png";
 import DeliveryMeals from "../Assets/delivery-image.png";
+import { motion , useAnimation} from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
 
 const Work = () => {
   const workInfoData = [
@@ -24,6 +26,16 @@ const Work = () => {
   const imageStyle = {
     filter: 'hue-rotate(180deg)', // Adjust the degree value for the desired blue color
   };
+  const controls = useAnimation();
+  const [ref, inView] = useInView({
+    triggerOnce: true, 
+  });
+
+  useEffect(() => {
+    if (inView) {
+      controls.start({ opacity: 1, y: 0 });
+    }
+  }, [controls, inView]);
   return (
     <div className="work-section-wrapper">
       <div className="work-section-top">
@@ -33,16 +45,23 @@ const Work = () => {
         Wholesale distribution model and subscription model for merchants and customers.</p>
       </div>
       <div className="work-section-bottom">
-        {workInfoData.map((data) => (
-          <div className="work-section-info" key={data.title}>
-            <div className="info-boxes-img-container">
-              <img src={data.image} alt="" style={imageStyle} />
-            </div>
-            <h2>{data.title}</h2>
-            <p>{data.text}</p>
+      {workInfoData.map((data, index) => (
+        <motion.div
+          key={data.title}
+          className="work-section-info"
+          ref={ref}
+          initial={{ opacity: 0, y: 50 }}
+          animate={controls}
+          transition={{ duration: 1.5, delay: index * 0.1 }}
+        >
+          <div className="info-boxes-img-container">
+            <img src={data.image} alt="" style={imageStyle} />
           </div>
-        ))}
-      </div>
+          <h2>{data.title}</h2>
+          <p>{data.text}</p>
+        </motion.div>
+      ))}
+    </div>
     </div>
   );
 };
