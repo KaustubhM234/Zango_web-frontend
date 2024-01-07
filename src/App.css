@@ -656,8 +656,8 @@ transition: all;
 .inputs:hover .fieldName,.inputs:hover .fieldValue
 {
   color: #187ffa;
-  border-color: #187ffa;
-  border-width: 4px;
+  border-color: #2a2a2a69;
+  border-width: 3px;
 }
 
 .fieldName
@@ -680,9 +680,10 @@ transition: all;
   font-size: 1.2vw;
   padding: 0 1.25vw;
   border: 1px solid #2a2a2a;
+  /* border-width: 0 0 1px 0; */
   border-radius: 0.5vw;
   background-color: transparent;
-  transition: all 0.2s ease-out;
+  transition: all 0.1s ease-out;
 }
 
 .message
