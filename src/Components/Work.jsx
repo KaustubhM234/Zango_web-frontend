@@ -52,7 +52,7 @@ const Work = () => {
           ref={ref}
           initial={{ opacity: 0, y: 50 }}
           animate={controls}
-          transition={{ duration: 1.5, delay: index * 0.1 }}
+          transition={{ duration: 1, delay: index * 1}}
         >
           <div className="info-boxes-img-container">
             <img src={data.image} alt="" style={imageStyle} />
